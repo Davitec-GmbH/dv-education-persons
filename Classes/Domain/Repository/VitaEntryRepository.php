@@ -1,0 +1,39 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Davitec\DvEducationPersons\Domain\Repository;
+
+use TYPO3\CMS\Extbase\Persistence\QueryInterface;
+use TYPO3\CMS\Extbase\Persistence\QueryResultInterface;
+use TYPO3\CMS\Extbase\Persistence\Repository;
+
+/**
+ * Repository for VitaEntry domain model.
+ */
+class VitaEntryRepository extends Repository
+{
+    /**
+     * @var array<string, string>
+     */
+    protected $defaultOrderings = [
+        'sorting' => QueryInterface::ORDER_ASCENDING,
+    ];
+
+    /**
+     * Find all vita entries belonging to a specific person.
+     *
+     * @param int $personUid The UID of the person
+     * @return QueryResultInterface<\Davitec\DvEducationPersons\Domain\Model\VitaEntry>
+     */
+    public function findByPerson(int $personUid): QueryResultInterface
+    {
+        $query = $this->createQuery();
+
+        $query->matching(
+            $query->equals('person', $personUid)
+        );
+
+        return $query->execute();
+    }
+}

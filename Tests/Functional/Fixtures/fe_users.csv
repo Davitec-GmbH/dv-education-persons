@@ -1,0 +1,6 @@
+"uid","pid","username","password","first_name","last_name","email","tx_extbase_type","department","position","room","teaching_area","disable","deleted","usergroup"
+1,1,"maria.schmidt","x","Maria","Schmidt","maria@test.de","Davitec\DvEducationPersons\Domain\Model\Person","Informatik","Professorin","A1","Software Engineering",0,0,"1"
+2,1,"thomas.mueller","x","Thomas","Müller","thomas@test.de","Davitec\DvEducationPersons\Domain\Model\Person","Wirtschaft","Dozent","B1","Controlling",0,0,"1"
+3,1,"lisa.weber","x","Lisa","Weber","lisa@test.de","Davitec\DvEducationPersons\Domain\Model\Person","Gestaltung","Mitarbeiterin","C1","UX Design",0,0,"1"
+4,1,"sarah.braun","x","Sarah","Braun","sarah@test.de","Davitec\DvEducationPersons\Domain\Model\Person","Informatik","Professorin","A2","KI",0,0,"1"
+5,1,"deleted.user","x","Deleted","User","del@test.de","Davitec\DvEducationPersons\Domain\Model\Person","Informatik","Prof","","",1,0,"1"

@@ -1,0 +1,100 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="content">
+
+    <header>
+        <h1><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:list.headline" /></h1>
+    </header>
+
+    <section class="person-search" aria-label="{f:translate(key: 'LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:list.search.ariaLabel')}">
+        <f:form action="list" controller="Person" pluginName="PersonList" method="post">
+            <fieldset>
+                <legend class="sr-only"><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:list.search.legend" /></legend>
+
+                <div class="person-search__field">
+                    <label for="person-search-term">
+                        <f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:list.search.searchTerm" />
+                    </label>
+                    <f:form.textfield name="searchTerm" id="person-search-term" value="{searchTerm}" />
+                </div>
+
+                <div class="person-search__field">
+                    <label for="person-search-department">
+                        <f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:list.search.department" />
+                    </label>
+                    <f:form.select name="department" id="person-search-department" value="{department}"
+                                   options="{departments}"
+                                   prependOptionLabel="{f:translate(key: 'LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:list.search.allDepartments')}"
+                                   prependOptionValue="" />
+                </div>
+
+                <div class="person-search__submit">
+                    <f:form.submit value="{f:translate(key: 'LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:list.search.submit')}" />
+                    <f:if condition="{searchTerm} || {department} || {letter}">
+                        <a href="{f:uri.page(pageUid: listPid)}" class="person-search__reset">
+                            <f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:list.search.reset" />
+                        </a>
+                    </f:if>
+                </div>
+            </fieldset>
+        </f:form>
+    </section>
+
+    <nav class="person-letter-nav" aria-label="{f:translate(key: 'LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:list.letterNav.ariaLabel')}">
+        <ul>
+            <li>
+                <f:if condition="{letter}">
+                    <f:then>
+                        <f:link.action action="list" controller="Person" pluginName="PersonList"
+                                       arguments="{searchTerm: searchTerm, department: department}">
+                            <f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:list.letterNav.all" />
+                        </f:link.action>
+                    </f:then>
+                    <f:else>
+                        <span aria-current="true">
+                            <f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:list.letterNav.all" />
+                        </span>
+                    </f:else>
+                </f:if>
+            </li>
+            <f:for each="{0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E', 5: 'F', 6: 'G', 7: 'H', 8: 'I', 9: 'J', 10: 'K', 11: 'L', 12: 'M', 13: 'N', 14: 'O', 15: 'P', 16: 'Q', 17: 'R', 18: 'S', 19: 'T', 20: 'U', 21: 'V', 22: 'W', 23: 'X', 24: 'Y', 25: 'Z'}" as="currentLetter">
+                <li>
+                    <f:if condition="{letter} == {currentLetter}">
+                        <f:then>
+                            <span aria-current="true">{currentLetter}</span>
+                        </f:then>
+                        <f:else>
+                            <f:link.action action="list" controller="Person" pluginName="PersonList"
+                                           arguments="{letter: currentLetter, searchTerm: searchTerm, department: department}">
+                                {currentLetter}
+                            </f:link.action>
+                        </f:else>
+                    </f:if>
+                </li>
+            </f:for>
+        </ul>
+    </nav>
+
+    <f:if condition="{persons}">
+        <f:then>
+            <ul class="person-list" role="list">
+                <f:for each="{persons}" as="person">
+                    <li class="person-list__item">
+                        <f:render partial="Person/Card" arguments="{person: person, settings: settings}" />
+                    </li>
+                </f:for>
+            </ul>
+        </f:then>
+        <f:else>
+            <p class="person-list__empty">
+                <f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:list.noResults" />
+            </p>
+        </f:else>
+    </f:if>
+
+</f:section>
+
+</html>

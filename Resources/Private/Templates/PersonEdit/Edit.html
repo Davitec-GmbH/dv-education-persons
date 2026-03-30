@@ -1,0 +1,98 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="content">
+
+    <header>
+        <h1><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:edit.headline" /></h1>
+    </header>
+
+    <f:flashMessages />
+
+    <f:if condition="{person}">
+    <f:form action="update" controller="PersonEdit" pluginName="PersonEdit" method="post">
+        <f:form.hidden name="person[__identity]" value="{person.uid}" />
+
+        <fieldset>
+            <legend><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:edit.section.contact" /></legend>
+
+            <div class="form-group">
+                <label for="person-department">
+                    <f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.department" />
+                </label>
+                <f:form.textfield name="person[department]" value="{person.department}" id="person-department" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="person-position">
+                    <f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.position" />
+                </label>
+                <f:form.textfield name="person[position]" value="{person.position}" id="person-position" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="person-room">
+                    <f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.room" />
+                </label>
+                <f:form.textfield name="person[room]" value="{person.room}" id="person-room" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="person-phone">
+                    <f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.phone" />
+                </label>
+                <f:form.textfield name="person[telephone]" value="{person.telephone}" id="person-phone" class="form-control" type="tel" />
+            </div>
+
+            <div class="form-group">
+                <label for="person-mobile">
+                    <f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.mobile" />
+                </label>
+                <f:form.textfield name="person[mobile]" value="{person.mobile}" id="person-mobile" class="form-control" type="tel" />
+            </div>
+
+            <div class="form-group">
+                <label for="person-fax">
+                    <f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.fax" />
+                </label>
+                <f:form.textfield name="person[fax]" value="{person.fax}" id="person-fax" class="form-control" type="tel" />
+            </div>
+
+            <div class="form-group">
+                <label for="person-website">
+                    <f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.website" />
+                </label>
+                <f:form.textfield name="person[www]" value="{person.www}" id="person-website" class="form-control" type="url" />
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:edit.section.academic" /></legend>
+
+            <div class="form-group">
+                <label for="person-teaching-area">
+                    <f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.teachingArea" />
+                </label>
+                <f:form.textarea name="person[teachingArea]" value="{person.teachingArea}" id="person-teaching-area" class="form-control" rows="3" />
+            </div>
+
+            <div class="form-group">
+                <label for="person-consultation-hours">
+                    <f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.consultationHours" />
+                </label>
+                <f:form.textarea name="person[consultationHours]" value="{person.consultationHours}" id="person-consultation-hours" class="form-control" rows="3" />
+            </div>
+        </fieldset>
+
+        <div class="form-actions">
+            <f:form.submit value="{f:translate(key: 'LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:edit.submit')}" class="btn btn-primary" />
+        </div>
+
+    </f:form>
+    </f:if>
+
+</f:section>
+
+</html>

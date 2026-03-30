@@ -1,0 +1,14 @@
+plugin.tx_dveducationpersons {
+  persistence {
+    # cat=plugin.tx_dveducationpersons/storage; type=int; label=Storage PID
+    storagePid =
+  }
+  settings {
+    # cat=plugin.tx_dveducationpersons/settings; type=int; label=Detail page UID
+    detailPid =
+    # cat=plugin.tx_dveducationpersons/settings; type=int; label=List page UID
+    listPid =
+    # cat=plugin.tx_dveducationpersons/settings; type=int; label=Items per page
+    itemsPerPage = 20
+  }
+}

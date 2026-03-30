@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages" date="2026-03-30T00:00:00Z" product-name="dv_education_persons">
+        <header/>
+        <body>
+            <trans-unit id="sheet.general" resname="sheet.general">
+                <source>General</source>
+            </trans-unit>
+            <trans-unit id="settings.detailPid" resname="settings.detailPid">
+                <source>Detail page</source>
+            </trans-unit>
+            <trans-unit id="settings.listPid" resname="settings.listPid">
+                <source>List page</source>
+            </trans-unit>
+            <trans-unit id="settings.itemsPerPage" resname="settings.itemsPerPage">
+                <source>Items per page</source>
+            </trans-unit>
+            <trans-unit id="settings.departments" resname="settings.departments">
+                <source>Departments (comma-separated, leave empty for all)</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

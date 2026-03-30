@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages" date="2026-03-30T00:00:00Z" product-name="dv_education_persons">
+        <header/>
+        <body>
+            <!-- fe_users fields -->
+            <trans-unit id="fe_users.tx_extbase_type.person" resname="fe_users.tx_extbase_type.person">
+                <source>Education Person</source>
+            </trans-unit>
+            <trans-unit id="fe_users.room" resname="fe_users.room">
+                <source>Room</source>
+            </trans-unit>
+            <trans-unit id="fe_users.department" resname="fe_users.department">
+                <source>Department</source>
+            </trans-unit>
+            <trans-unit id="fe_users.position" resname="fe_users.position">
+                <source>Position</source>
+            </trans-unit>
+            <trans-unit id="fe_users.teaching_area" resname="fe_users.teaching_area">
+                <source>Teaching area</source>
+            </trans-unit>
+            <trans-unit id="fe_users.consultation_hours" resname="fe_users.consultation_hours">
+                <source>Consultation hours</source>
+            </trans-unit>
+            <trans-unit id="fe_users.mobile" resname="fe_users.mobile">
+                <source>Mobile</source>
+            </trans-unit>
+            <trans-unit id="fe_users.fax" resname="fe_users.fax">
+                <source>Fax</source>
+            </trans-unit>
+            <trans-unit id="fe_users.slug" resname="fe_users.slug">
+                <source>URL segment</source>
+            </trans-unit>
+            <trans-unit id="fe_users.vita_entries" resname="fe_users.vita_entries">
+                <source>Vita entries</source>
+            </trans-unit>
+            <trans-unit id="fe_users.publications" resname="fe_users.publications">
+                <source>Publications</source>
+            </trans-unit>
+            <trans-unit id="fe_users.researches" resname="fe_users.researches">
+                <source>Research</source>
+            </trans-unit>
+            <trans-unit id="fe_users.teachings" resname="fe_users.teachings">
+                <source>Teaching</source>
+            </trans-unit>
+            <trans-unit id="fe_users.person_links" resname="fe_users.person_links">
+                <source>Links</source>
+            </trans-unit>
+            <trans-unit id="fe_users.tab.academic" resname="fe_users.tab.academic">
+                <source>Academic Profile</source>
+            </trans-unit>
+            <trans-unit id="fe_users.tab.contact" resname="fe_users.tab.contact">
+                <source>Contact</source>
+            </trans-unit>
+            <trans-unit id="fe_users.tab.subentities" resname="fe_users.tab.subentities">
+                <source>Vita &amp; Publications</source>
+            </trans-unit>
+
+            <!-- VitaEntry -->
+            <trans-unit id="tx_dveducationpersons_domain_model_vitaentry" resname="tx_dveducationpersons_domain_model_vitaentry">
+                <source>Vita Entry</source>
+            </trans-unit>
+            <trans-unit id="tx_dveducationpersons_domain_model_vitaentry.title" resname="tx_dveducationpersons_domain_model_vitaentry.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_dveducationpersons_domain_model_vitaentry.description" resname="tx_dveducationpersons_domain_model_vitaentry.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_dveducationpersons_domain_model_vitaentry.date_start" resname="tx_dveducationpersons_domain_model_vitaentry.date_start">
+                <source>Start date</source>
+            </trans-unit>
+            <trans-unit id="tx_dveducationpersons_domain_model_vitaentry.date_end" resname="tx_dveducationpersons_domain_model_vitaentry.date_end">
+                <source>End date</source>
+            </trans-unit>
+
+            <!-- Publication -->
+            <trans-unit id="tx_dveducationpersons_domain_model_publication" resname="tx_dveducationpersons_domain_model_publication">
+                <source>Publication</source>
+            </trans-unit>
+            <trans-unit id="tx_dveducationpersons_domain_model_publication.title" resname="tx_dveducationpersons_domain_model_publication.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_dveducationpersons_domain_model_publication.description" resname="tx_dveducationpersons_domain_model_publication.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_dveducationpersons_domain_model_publication.date" resname="tx_dveducationpersons_domain_model_publication.date">
+                <source>Date</source>
+            </trans-unit>
+            <trans-unit id="tx_dveducationpersons_domain_model_publication.url" resname="tx_dveducationpersons_domain_model_publication.url">
+                <source>URL</source>
+            </trans-unit>
+
+            <!-- Research -->
+            <trans-unit id="tx_dveducationpersons_domain_model_research" resname="tx_dveducationpersons_domain_model_research">
+                <source>Research</source>
+            </trans-unit>
+            <trans-unit id="tx_dveducationpersons_domain_model_research.title" resname="tx_dveducationpersons_domain_model_research.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_dveducationpersons_domain_model_research.description" resname="tx_dveducationpersons_domain_model_research.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_dveducationpersons_domain_model_research.date" resname="tx_dveducationpersons_domain_model_research.date">
+                <source>Date</source>
+            </trans-unit>
+            <trans-unit id="tx_dveducationpersons_domain_model_research.url" resname="tx_dveducationpersons_domain_model_research.url">
+                <source>URL</source>
+            </trans-unit>
+
+            <!-- Teaching -->
+            <trans-unit id="tx_dveducationpersons_domain_model_teaching" resname="tx_dveducationpersons_domain_model_teaching">
+                <source>Teaching</source>
+            </trans-unit>
+            <trans-unit id="tx_dveducationpersons_domain_model_teaching.title" resname="tx_dveducationpersons_domain_model_teaching.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_dveducationpersons_domain_model_teaching.description" resname="tx_dveducationpersons_domain_model_teaching.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_dveducationpersons_domain_model_teaching.date" resname="tx_dveducationpersons_domain_model_teaching.date">
+                <source>Date</source>
+            </trans-unit>
+            <trans-unit id="tx_dveducationpersons_domain_model_teaching.url" resname="tx_dveducationpersons_domain_model_teaching.url">
+                <source>URL</source>
+            </trans-unit>
+
+            <!-- Link -->
+            <trans-unit id="tx_dveducationpersons_domain_model_link" resname="tx_dveducationpersons_domain_model_link">
+                <source>Link</source>
+            </trans-unit>
+            <trans-unit id="tx_dveducationpersons_domain_model_link.title" resname="tx_dveducationpersons_domain_model_link.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_dveducationpersons_domain_model_link.url" resname="tx_dveducationpersons_domain_model_link.url">
+                <source>URL</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,4 @@
+.. This is included by all documents to provide common definitions.
+
+.. |extension_key| replace:: dv_education_persons
+.. |extension_name| replace:: Education Persons

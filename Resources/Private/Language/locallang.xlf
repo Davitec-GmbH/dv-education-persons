@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages" date="2026-03-30T00:00:00Z" product-name="dv_education_persons">
+        <header/>
+        <body>
+            <!-- Plugin titles -->
+            <trans-unit id="plugin.personlist.title" resname="plugin.personlist.title">
+                <source>Person List</source>
+            </trans-unit>
+            <trans-unit id="plugin.persondetail.title" resname="plugin.persondetail.title">
+                <source>Person Detail</source>
+            </trans-unit>
+            <trans-unit id="plugin.personedit.title" resname="plugin.personedit.title">
+                <source>Person Edit</source>
+            </trans-unit>
+            <trans-unit id="plugin.personlist.description" resname="plugin.personlist.description">
+                <source>Displays a filterable list of persons</source>
+            </trans-unit>
+            <trans-unit id="plugin.persondetail.description" resname="plugin.persondetail.description">
+                <source>Displays a single person with full profile</source>
+            </trans-unit>
+            <trans-unit id="plugin.personedit.description" resname="plugin.personedit.description">
+                <source>Allows logged-in users to edit their own profile</source>
+            </trans-unit>
+
+            <!-- List view -->
+            <trans-unit id="list.search" resname="list.search">
+                <source>Search</source>
+            </trans-unit>
+            <trans-unit id="list.search.placeholder" resname="list.search.placeholder">
+                <source>Search by name, department, position...</source>
+            </trans-unit>
+            <trans-unit id="list.department" resname="list.department">
+                <source>Department</source>
+            </trans-unit>
+            <trans-unit id="list.department.all" resname="list.department.all">
+                <source>All departments</source>
+            </trans-unit>
+            <trans-unit id="list.letter.all" resname="list.letter.all">
+                <source>All</source>
+            </trans-unit>
+            <trans-unit id="list.noResults" resname="list.noResults">
+                <source>No persons found.</source>
+            </trans-unit>
+
+            <!-- Detail view -->
+            <trans-unit id="show.backToList" resname="show.backToList">
+                <source>Back to list</source>
+            </trans-unit>
+            <trans-unit id="show.contact" resname="show.contact">
+                <source>Contact</source>
+            </trans-unit>
+            <trans-unit id="show.room" resname="show.room">
+                <source>Room</source>
+            </trans-unit>
+            <trans-unit id="show.phone" resname="show.phone">
+                <source>Phone</source>
+            </trans-unit>
+            <trans-unit id="show.mobile" resname="show.mobile">
+                <source>Mobile</source>
+            </trans-unit>
+            <trans-unit id="show.fax" resname="show.fax">
+                <source>Fax</source>
+            </trans-unit>
+            <trans-unit id="show.email" resname="show.email">
+                <source>Email</source>
+            </trans-unit>
+            <trans-unit id="show.website" resname="show.website">
+                <source>Website</source>
+            </trans-unit>
+            <trans-unit id="show.vita" resname="show.vita">
+                <source>Curriculum Vitae</source>
+            </trans-unit>
+            <trans-unit id="show.publications" resname="show.publications">
+                <source>Publications</source>
+            </trans-unit>
+            <trans-unit id="show.research" resname="show.research">
+                <source>Research</source>
+            </trans-unit>
+            <trans-unit id="show.teaching" resname="show.teaching">
+                <source>Teaching</source>
+            </trans-unit>
+            <trans-unit id="show.links" resname="show.links">
+                <source>Links</source>
+            </trans-unit>
+            <trans-unit id="show.noEntries" resname="show.noEntries">
+                <source>No entries available.</source>
+            </trans-unit>
+
+            <!-- Edit view -->
+            <trans-unit id="edit.title" resname="edit.title">
+                <source>Edit your profile</source>
+            </trans-unit>
+            <trans-unit id="edit.save" resname="edit.save">
+                <source>Save</source>
+            </trans-unit>
+            <trans-unit id="edit.success" resname="edit.success">
+                <source>Your profile has been updated successfully.</source>
+            </trans-unit>
+            <trans-unit id="edit.notLoggedIn" resname="edit.notLoggedIn">
+                <source>You must be logged in to edit your profile.</source>
+            </trans-unit>
+            <trans-unit id="edit.accessDenied" resname="edit.accessDenied">
+                <source>You are not allowed to edit this profile.</source>
+            </trans-unit>
+
+            <!-- List view (additional) -->
+            <trans-unit id="list.headline" resname="list.headline">
+                <source>Persons</source>
+            </trans-unit>
+            <trans-unit id="list.search.ariaLabel" resname="list.search.ariaLabel">
+                <source>Search persons</source>
+            </trans-unit>
+            <trans-unit id="list.search.legend" resname="list.search.legend">
+                <source>Filter persons</source>
+            </trans-unit>
+            <trans-unit id="list.search.searchTerm" resname="list.search.searchTerm">
+                <source>Search</source>
+            </trans-unit>
+            <trans-unit id="list.search.department" resname="list.search.department">
+                <source>Department</source>
+            </trans-unit>
+            <trans-unit id="list.search.allDepartments" resname="list.search.allDepartments">
+                <source>All departments</source>
+            </trans-unit>
+            <trans-unit id="list.search.submit" resname="list.search.submit">
+                <source>Search</source>
+            </trans-unit>
+            <trans-unit id="list.search.reset" resname="list.search.reset">
+                <source>Reset</source>
+            </trans-unit>
+            <trans-unit id="list.letterNav.ariaLabel" resname="list.letterNav.ariaLabel">
+                <source>Filter by letter</source>
+            </trans-unit>
+            <trans-unit id="list.letterNav.all" resname="list.letterNav.all">
+                <source>All</source>
+            </trans-unit>
+
+            <!-- Detail view (additional) -->
+            <trans-unit id="show.backNav" resname="show.backNav">
+                <source>Navigation</source>
+            </trans-unit>
+            <trans-unit id="show.vita.empty" resname="show.vita.empty">
+                <source>No vita entries available.</source>
+            </trans-unit>
+            <trans-unit id="show.publications.empty" resname="show.publications.empty">
+                <source>No publications available.</source>
+            </trans-unit>
+            <trans-unit id="show.research.empty" resname="show.research.empty">
+                <source>No research entries available.</source>
+            </trans-unit>
+            <trans-unit id="show.teaching.empty" resname="show.teaching.empty">
+                <source>No teaching entries available.</source>
+            </trans-unit>
+
+            <!-- Field labels (shared) -->
+            <trans-unit id="field.room" resname="field.room">
+                <source>Room</source>
+            </trans-unit>
+            <trans-unit id="field.department" resname="field.department">
+                <source>Department</source>
+            </trans-unit>
+            <trans-unit id="field.position" resname="field.position">
+                <source>Position</source>
+            </trans-unit>
+            <trans-unit id="field.email" resname="field.email">
+                <source>Email</source>
+            </trans-unit>
+            <trans-unit id="field.phone" resname="field.phone">
+                <source>Phone</source>
+            </trans-unit>
+            <trans-unit id="field.mobile" resname="field.mobile">
+                <source>Mobile</source>
+            </trans-unit>
+            <trans-unit id="field.fax" resname="field.fax">
+                <source>Fax</source>
+            </trans-unit>
+            <trans-unit id="field.website" resname="field.website">
+                <source>Website</source>
+            </trans-unit>
+            <trans-unit id="field.teachingArea" resname="field.teachingArea">
+                <source>Teaching area</source>
+            </trans-unit>
+            <trans-unit id="field.consultationHours" resname="field.consultationHours">
+                <source>Consultation hours</source>
+            </trans-unit>
+
+            <!-- Edit view (additional) -->
+            <trans-unit id="edit.headline" resname="edit.headline">
+                <source>Edit profile</source>
+            </trans-unit>
+            <trans-unit id="edit.section.contact" resname="edit.section.contact">
+                <source>Contact information</source>
+            </trans-unit>
+            <trans-unit id="edit.section.academic" resname="edit.section.academic">
+                <source>Academic information</source>
+            </trans-unit>
+            <trans-unit id="edit.submit" resname="edit.submit">
+                <source>Save</source>
+            </trans-unit>
+
+            <!-- Sub-entities -->
+            <trans-unit id="subentity.moreInfo" resname="subentity.moreInfo">
+                <source>More information</source>
+            </trans-unit>
+
+            <!-- FlexForm -->
+            <trans-unit id="flexform.general" resname="flexform.general">
+                <source>General</source>
+            </trans-unit>
+            <trans-unit id="flexform.detailPid" resname="flexform.detailPid">
+                <source>Detail page</source>
+            </trans-unit>
+            <trans-unit id="flexform.listPid" resname="flexform.listPid">
+                <source>List page</source>
+            </trans-unit>
+            <trans-unit id="flexform.itemsPerPage" resname="flexform.itemsPerPage">
+                <source>Items per page</source>
+            </trans-unit>
+            <trans-unit id="flexform.departments" resname="flexform.departments">
+                <source>Departments (comma-separated, leave empty for all)</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2026-03-30T00:00:00Z" product-name="dv_education_persons">
+        <header/>
+        <body>
+            <!-- Plugin titles -->
+            <trans-unit id="plugin.personlist.title" resname="plugin.personlist.title">
+                <source>Person List</source>
+                <target>Personenliste</target>
+            </trans-unit>
+            <trans-unit id="plugin.persondetail.title" resname="plugin.persondetail.title">
+                <source>Person Detail</source>
+                <target>Personendetail</target>
+            </trans-unit>
+            <trans-unit id="plugin.personedit.title" resname="plugin.personedit.title">
+                <source>Person Edit</source>
+                <target>Profil bearbeiten</target>
+            </trans-unit>
+            <trans-unit id="plugin.personlist.description" resname="plugin.personlist.description">
+                <source>Displays a filterable list of persons</source>
+                <target>Zeigt eine filterbare Personenliste an</target>
+            </trans-unit>
+            <trans-unit id="plugin.persondetail.description" resname="plugin.persondetail.description">
+                <source>Displays a single person with full profile</source>
+                <target>Zeigt eine Person mit vollständigem Profil an</target>
+            </trans-unit>
+            <trans-unit id="plugin.personedit.description" resname="plugin.personedit.description">
+                <source>Allows logged-in users to edit their own profile</source>
+                <target>Ermöglicht eingeloggten Benutzern die Bearbeitung ihres Profils</target>
+            </trans-unit>
+
+            <!-- List view -->
+            <trans-unit id="list.search" resname="list.search">
+                <source>Search</source>
+                <target>Suche</target>
+            </trans-unit>
+            <trans-unit id="list.search.placeholder" resname="list.search.placeholder">
+                <source>Search by name, department, position...</source>
+                <target>Nach Name, Abteilung, Position suchen...</target>
+            </trans-unit>
+            <trans-unit id="list.department" resname="list.department">
+                <source>Department</source>
+                <target>Abteilung</target>
+            </trans-unit>
+            <trans-unit id="list.department.all" resname="list.department.all">
+                <source>All departments</source>
+                <target>Alle Abteilungen</target>
+            </trans-unit>
+            <trans-unit id="list.letter.all" resname="list.letter.all">
+                <source>All</source>
+                <target>Alle</target>
+            </trans-unit>
+            <trans-unit id="list.search.reset" resname="list.search.reset">
+                <source>Reset</source>
+                <target>Zurücksetzen</target>
+            </trans-unit>
+            <trans-unit id="list.noResults" resname="list.noResults">
+                <source>No persons found.</source>
+                <target>Keine Personen gefunden.</target>
+            </trans-unit>
+
+            <!-- Detail view -->
+            <trans-unit id="show.backToList" resname="show.backToList">
+                <source>Back to list</source>
+                <target>Zurück zur Liste</target>
+            </trans-unit>
+            <trans-unit id="show.contact" resname="show.contact">
+                <source>Contact</source>
+                <target>Kontakt</target>
+            </trans-unit>
+            <trans-unit id="show.room" resname="show.room">
+                <source>Room</source>
+                <target>Raum</target>
+            </trans-unit>
+            <trans-unit id="show.phone" resname="show.phone">
+                <source>Phone</source>
+                <target>Telefon</target>
+            </trans-unit>
+            <trans-unit id="show.mobile" resname="show.mobile">
+                <source>Mobile</source>
+                <target>Mobil</target>
+            </trans-unit>
+            <trans-unit id="show.fax" resname="show.fax">
+                <source>Fax</source>
+                <target>Fax</target>
+            </trans-unit>
+            <trans-unit id="show.email" resname="show.email">
+                <source>Email</source>
+                <target>E-Mail</target>
+            </trans-unit>
+            <trans-unit id="show.website" resname="show.website">
+                <source>Website</source>
+                <target>Webseite</target>
+            </trans-unit>
+            <trans-unit id="show.vita" resname="show.vita">
+                <source>Curriculum Vitae</source>
+                <target>Lebenslauf</target>
+            </trans-unit>
+            <trans-unit id="show.publications" resname="show.publications">
+                <source>Publications</source>
+                <target>Publikationen</target>
+            </trans-unit>
+            <trans-unit id="show.research" resname="show.research">
+                <source>Research</source>
+                <target>Forschung</target>
+            </trans-unit>
+            <trans-unit id="show.teaching" resname="show.teaching">
+                <source>Teaching</source>
+                <target>Lehre</target>
+            </trans-unit>
+            <trans-unit id="show.links" resname="show.links">
+                <source>Links</source>
+                <target>Links</target>
+            </trans-unit>
+            <trans-unit id="show.noEntries" resname="show.noEntries">
+                <source>No entries available.</source>
+                <target>Keine Einträge vorhanden.</target>
+            </trans-unit>
+
+            <!-- Edit view -->
+            <trans-unit id="edit.title" resname="edit.title">
+                <source>Edit your profile</source>
+                <target>Profil bearbeiten</target>
+            </trans-unit>
+            <trans-unit id="edit.save" resname="edit.save">
+                <source>Save</source>
+                <target>Speichern</target>
+            </trans-unit>
+            <trans-unit id="edit.success" resname="edit.success">
+                <source>Your profile has been updated successfully.</source>
+                <target>Ihr Profil wurde erfolgreich aktualisiert.</target>
+            </trans-unit>
+            <trans-unit id="edit.notLoggedIn" resname="edit.notLoggedIn">
+                <source>You must be logged in to edit your profile.</source>
+                <target>Sie müssen eingeloggt sein, um Ihr Profil zu bearbeiten.</target>
+            </trans-unit>
+            <trans-unit id="edit.accessDenied" resname="edit.accessDenied">
+                <source>You are not allowed to edit this profile.</source>
+                <target>Sie sind nicht berechtigt, dieses Profil zu bearbeiten.</target>
+            </trans-unit>
+
+            <!-- FlexForm -->
+            <trans-unit id="flexform.general" resname="flexform.general">
+                <source>General</source>
+                <target>Allgemein</target>
+            </trans-unit>
+            <trans-unit id="flexform.detailPid" resname="flexform.detailPid">
+                <source>Detail page</source>
+                <target>Detailseite</target>
+            </trans-unit>
+            <trans-unit id="flexform.listPid" resname="flexform.listPid">
+                <source>List page</source>
+                <target>Listenseite</target>
+            </trans-unit>
+            <trans-unit id="flexform.itemsPerPage" resname="flexform.itemsPerPage">
+                <source>Items per page</source>
+                <target>Einträge pro Seite</target>
+            </trans-unit>
+            <trans-unit id="flexform.departments" resname="flexform.departments">
+                <source>Departments (comma-separated, leave empty for all)</source>
+                <target>Abteilungen (kommagetrennt, leer für alle)</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

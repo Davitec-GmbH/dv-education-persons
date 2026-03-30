@@ -1,0 +1,120 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="content">
+
+    <article class="person-detail" aria-label="{person.firstName} {person.lastName}">
+
+        <header class="person-detail__header">
+            <div class="person-detail__image">
+                <f:if condition="{person.image}">
+                    <f:for each="{person.image}" as="imageFile" iteration="imageIterator">
+                        <f:if condition="{imageIterator.isFirst}">
+                            <f:image image="{imageFile}" alt="{person.firstName} {person.lastName}" width="300" />
+                        </f:if>
+                    </f:for>
+                </f:if>
+            </div>
+            <div class="person-detail__info">
+                <h1>{person.firstName} {person.lastName}</h1>
+                <f:if condition="{person.position}">
+                    <p class="person-detail__position">{person.position}</p>
+                </f:if>
+                <f:if condition="{person.department}">
+                    <p class="person-detail__department">{person.department}</p>
+                </f:if>
+            </div>
+        </header>
+
+        <section class="person-detail__contact" aria-label="{f:translate(key: 'LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:show.contact')}">
+            <h2><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:show.contact" /></h2>
+            <dl>
+                <f:if condition="{person.room}">
+                    <dt><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.room" /></dt>
+                    <dd>{person.room}</dd>
+                </f:if>
+                <f:if condition="{person.email}">
+                    <dt><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.email" /></dt>
+                    <dd><a href="mailto:{person.email}">{person.email}</a></dd>
+                </f:if>
+                <f:if condition="{person.telephone}">
+                    <dt><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.phone" /></dt>
+                    <dd><a href="tel:{person.telephone}">{person.telephone}</a></dd>
+                </f:if>
+                <f:if condition="{person.mobile}">
+                    <dt><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.mobile" /></dt>
+                    <dd><a href="tel:{person.mobile}">{person.mobile}</a></dd>
+                </f:if>
+                <f:if condition="{person.fax}">
+                    <dt><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.fax" /></dt>
+                    <dd>{person.fax}</dd>
+                </f:if>
+                <f:if condition="{person.www}">
+                    <dt><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.website" /></dt>
+                    <dd><a href="{person.www}" target="_blank" rel="noopener noreferrer">{person.www}</a></dd>
+                </f:if>
+                <f:if condition="{person.teachingArea}">
+                    <dt><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.teachingArea" /></dt>
+                    <dd>{person.teachingArea}</dd>
+                </f:if>
+                <f:if condition="{person.consultationHours}">
+                    <dt><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.consultationHours" /></dt>
+                    <dd>{person.consultationHours}</dd>
+                </f:if>
+            </dl>
+        </section>
+
+        <f:if condition="{person.vitaEntries -> f:count()} > 0">
+            <section class="person-detail__section" aria-label="{f:translate(key: 'LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:show.vita')}">
+                <h2><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:show.vita" /></h2>
+                <f:render partial="Person/SubEntities" arguments="{items: person.vitaEntries, emptyMessageKey: 'show.vita.empty', type: 'vita'}" />
+            </section>
+        </f:if>
+
+        <f:if condition="{person.publications -> f:count()} > 0">
+            <section class="person-detail__section" aria-label="{f:translate(key: 'LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:show.publications')}">
+                <h2><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:show.publications" /></h2>
+                <f:render partial="Person/SubEntities" arguments="{items: person.publications, emptyMessageKey: 'show.publications.empty', type: 'publication'}" />
+            </section>
+        </f:if>
+
+        <f:if condition="{person.researches -> f:count()} > 0">
+            <section class="person-detail__section" aria-label="{f:translate(key: 'LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:show.research')}">
+                <h2><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:show.research" /></h2>
+                <f:render partial="Person/SubEntities" arguments="{items: person.researches, emptyMessageKey: 'show.research.empty', type: 'research'}" />
+            </section>
+        </f:if>
+
+        <f:if condition="{person.teachings -> f:count()} > 0">
+            <section class="person-detail__section" aria-label="{f:translate(key: 'LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:show.teaching')}">
+                <h2><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:show.teaching" /></h2>
+                <f:render partial="Person/SubEntities" arguments="{items: person.teachings, emptyMessageKey: 'show.teaching.empty', type: 'teaching'}" />
+            </section>
+        </f:if>
+
+        <f:if condition="{person.personLinks -> f:count()} > 0">
+            <section class="person-detail__section" aria-label="{f:translate(key: 'LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:show.links')}">
+                <h2><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:show.links" /></h2>
+                <ul class="person-detail__links">
+                    <f:for each="{person.personLinks}" as="link">
+                        <li>
+                            <a href="{link.url}" target="_blank" rel="noopener noreferrer">{link.title}</a>
+                        </li>
+                    </f:for>
+                </ul>
+            </section>
+        </f:if>
+
+        <nav class="person-detail__back" aria-label="{f:translate(key: 'LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:show.backNav')}">
+            <f:link.action action="list" controller="Person" pluginName="PersonList" pageUid="{settings.listPid}">
+                <f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:show.backToList" />
+            </f:link.action>
+        </nav>
+
+    </article>
+
+</f:section>
+
+</html>

@@ -1,0 +1,39 @@
+{
+    "name": "davitec/dv-education-persons",
+    "type": "typo3-cms-extension",
+    "description": "Generic person directory for the education sector. Extends fe_users with academic profile data and sub-entities (vita, publications, research, teaching, links).",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Davitec GmbH",
+            "email": "info@davitec.de",
+            "homepage": "https://www.davitec.de"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "typo3/cms-core": "^12.4 || ^13.4",
+        "typo3/cms-extbase": "^12.4 || ^13.4",
+        "typo3/cms-fluid": "^12.4 || ^13.4",
+        "typo3/cms-frontend": "^12.4 || ^13.4"
+    },
+    "require-dev": {
+        "typo3/testing-framework": "^8.0 || ^9.0",
+        "phpunit/phpunit": "^10.5 || ^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Davitec\\DvEducationPersons\\": "Classes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Davitec\\DvEducationPersons\\Tests\\": "Tests/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "dv_education_persons"
+        }
+    }
+}

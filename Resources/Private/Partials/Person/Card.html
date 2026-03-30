@@ -1,0 +1,45 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<article class="person-card" aria-label="{person.firstName} {person.lastName}">
+    <header class="person-card__header">
+        <h2 class="person-card__name">
+            <f:link.action action="show" controller="Person" pluginName="PersonDetail"
+                           pageUid="{settings.detailPid}" arguments="{person: person}">
+                {person.firstName} {person.lastName}
+            </f:link.action>
+        </h2>
+    </header>
+
+    <div class="person-card__body">
+        <f:if condition="{person.position}">
+            <p class="person-card__position">
+                <span class="sr-only"><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.position" />: </span>
+                {person.position}
+            </p>
+        </f:if>
+
+        <f:if condition="{person.department}">
+            <p class="person-card__department">
+                <span class="sr-only"><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.department" />: </span>
+                {person.department}
+            </p>
+        </f:if>
+
+        <f:if condition="{person.email}">
+            <p class="person-card__email">
+                <span class="sr-only"><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.email" />: </span>
+                <a href="mailto:{person.email}">{person.email}</a>
+            </p>
+        </f:if>
+
+        <f:if condition="{person.telephone}">
+            <p class="person-card__phone">
+                <span class="sr-only"><f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:field.phone" />: </span>
+                <a href="tel:{person.telephone}">{person.telephone}</a>
+            </p>
+        </f:if>
+    </div>
+</article>
+
+</html>

@@ -1,0 +1,59 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:if condition="{items -> f:count()} > 0">
+    <f:then>
+        <ul class="person-sub-entities person-sub-entities--{type}">
+            <f:for each="{items}" as="item">
+                <li class="person-sub-entities__item">
+                    <h3 class="person-sub-entities__title">{item.title}</h3>
+
+                    <f:if condition="{type} == 'vita'">
+                        <f:if condition="{item.dateStart}">
+                            <p class="person-sub-entities__date">
+                                <time datetime="{f:format.date(date: item.dateStart, format: 'Y-m-d')}">
+                                    <f:format.date date="{item.dateStart}" format="d.m.Y" />
+                                </time>
+                                <f:if condition="{item.dateEnd}">
+                                    <span> &ndash; </span>
+                                    <time datetime="{f:format.date(date: item.dateEnd, format: 'Y-m-d')}">
+                                        <f:format.date date="{item.dateEnd}" format="d.m.Y" />
+                                    </time>
+                                </f:if>
+                            </p>
+                        </f:if>
+                    </f:if>
+
+                    <f:if condition="{type} != 'vita'">
+                        <f:if condition="{item.date}">
+                            <p class="person-sub-entities__date">
+                                <time datetime="{f:format.date(date: item.date, format: 'Y-m-d')}">
+                                    <f:format.date date="{item.date}" format="d.m.Y" />
+                                </time>
+                            </p>
+                        </f:if>
+                    </f:if>
+
+                    <f:if condition="{item.description}">
+                        <p class="person-sub-entities__description">{item.description}</p>
+                    </f:if>
+
+                    <f:if condition="{item.url}">
+                        <p class="person-sub-entities__link">
+                            <a href="{item.url}" target="_blank" rel="noopener noreferrer">
+                                <f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:subentity.moreInfo" />
+                            </a>
+                        </p>
+                    </f:if>
+                </li>
+            </f:for>
+        </ul>
+    </f:then>
+    <f:else>
+        <p class="person-sub-entities__empty">
+            <f:translate key="LLL:EXT:dv_education_persons/Resources/Private/Language/locallang.xlf:{emptyMessageKey}" />
+        </p>
+    </f:else>
+</f:if>
+
+</html>
