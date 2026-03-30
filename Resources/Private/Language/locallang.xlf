@@ -103,6 +103,21 @@
             <trans-unit id="edit.accessDenied" resname="edit.accessDenied">
                 <source>You are not allowed to edit this profile.</source>
             </trans-unit>
+            <trans-unit id="edit.profileNotFound" resname="edit.profileNotFound">
+                <source>No person profile was found for your account.</source>
+            </trans-unit>
+            <trans-unit id="edit.profileNotFound.title" resname="edit.profileNotFound.title">
+                <source>Profile not found</source>
+            </trans-unit>
+            <trans-unit id="edit.accessDenied.title" resname="edit.accessDenied.title">
+                <source>Access denied</source>
+            </trans-unit>
+            <trans-unit id="edit.success.title" resname="edit.success.title">
+                <source>Saved</source>
+            </trans-unit>
+            <trans-unit id="edit.notLoggedIn.title" resname="edit.notLoggedIn.title">
+                <source>No access</source>
+            </trans-unit>
 
             <!-- List view (additional) -->
             <trans-unit id="list.headline" resname="list.headline">

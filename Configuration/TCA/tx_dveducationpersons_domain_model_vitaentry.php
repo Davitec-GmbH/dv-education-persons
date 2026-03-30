@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+defined('TYPO3') or die();
+
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:dv_education_persons/Resources/Private/Language/locallang_db.xlf:tx_dveducationpersons_domain_model_vitaentry',

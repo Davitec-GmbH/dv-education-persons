@@ -58,6 +58,42 @@
                 <source>No persons found.</source>
                 <target>Keine Personen gefunden.</target>
             </trans-unit>
+            <trans-unit id="list.headline" resname="list.headline">
+                <source>Persons</source>
+                <target>Personen</target>
+            </trans-unit>
+            <trans-unit id="list.search.ariaLabel" resname="list.search.ariaLabel">
+                <source>Search persons</source>
+                <target>Personen suchen</target>
+            </trans-unit>
+            <trans-unit id="list.search.legend" resname="list.search.legend">
+                <source>Filter persons</source>
+                <target>Personen filtern</target>
+            </trans-unit>
+            <trans-unit id="list.search.searchTerm" resname="list.search.searchTerm">
+                <source>Search</source>
+                <target>Suche</target>
+            </trans-unit>
+            <trans-unit id="list.search.department" resname="list.search.department">
+                <source>Department</source>
+                <target>Abteilung</target>
+            </trans-unit>
+            <trans-unit id="list.search.allDepartments" resname="list.search.allDepartments">
+                <source>All departments</source>
+                <target>Alle Abteilungen</target>
+            </trans-unit>
+            <trans-unit id="list.search.submit" resname="list.search.submit">
+                <source>Search</source>
+                <target>Suchen</target>
+            </trans-unit>
+            <trans-unit id="list.letterNav.ariaLabel" resname="list.letterNav.ariaLabel">
+                <source>Filter by letter</source>
+                <target>Nach Buchstabe filtern</target>
+            </trans-unit>
+            <trans-unit id="list.letterNav.all" resname="list.letterNav.all">
+                <source>All</source>
+                <target>Alle</target>
+            </trans-unit>
 
             <!-- Detail view -->
             <trans-unit id="show.backToList" resname="show.backToList">
@@ -137,6 +173,112 @@
             <trans-unit id="edit.accessDenied" resname="edit.accessDenied">
                 <source>You are not allowed to edit this profile.</source>
                 <target>Sie sind nicht berechtigt, dieses Profil zu bearbeiten.</target>
+            </trans-unit>
+            <trans-unit id="edit.profileNotFound" resname="edit.profileNotFound">
+                <source>No person profile was found for your account.</source>
+                <target>Es wurde kein Personenprofil für Ihren Account gefunden.</target>
+            </trans-unit>
+            <trans-unit id="edit.profileNotFound.title" resname="edit.profileNotFound.title">
+                <source>Profile not found</source>
+                <target>Profil nicht gefunden</target>
+            </trans-unit>
+            <trans-unit id="edit.accessDenied.title" resname="edit.accessDenied.title">
+                <source>Access denied</source>
+                <target>Zugriff verweigert</target>
+            </trans-unit>
+            <trans-unit id="edit.success.title" resname="edit.success.title">
+                <source>Saved</source>
+                <target>Gespeichert</target>
+            </trans-unit>
+            <trans-unit id="edit.notLoggedIn.title" resname="edit.notLoggedIn.title">
+                <source>No access</source>
+                <target>Kein Zugriff</target>
+            </trans-unit>
+            <trans-unit id="edit.headline" resname="edit.headline">
+                <source>Edit profile</source>
+                <target>Profil bearbeiten</target>
+            </trans-unit>
+            <trans-unit id="edit.section.contact" resname="edit.section.contact">
+                <source>Contact information</source>
+                <target>Kontaktinformationen</target>
+            </trans-unit>
+            <trans-unit id="edit.section.academic" resname="edit.section.academic">
+                <source>Academic information</source>
+                <target>Akademische Informationen</target>
+            </trans-unit>
+            <trans-unit id="edit.submit" resname="edit.submit">
+                <source>Save</source>
+                <target>Speichern</target>
+            </trans-unit>
+
+            <!-- Detail view (additional) -->
+            <trans-unit id="show.backNav" resname="show.backNav">
+                <source>Navigation</source>
+                <target>Navigation</target>
+            </trans-unit>
+            <trans-unit id="show.vita.empty" resname="show.vita.empty">
+                <source>No vita entries available.</source>
+                <target>Keine Lebenslauf-Einträge vorhanden.</target>
+            </trans-unit>
+            <trans-unit id="show.publications.empty" resname="show.publications.empty">
+                <source>No publications available.</source>
+                <target>Keine Publikationen vorhanden.</target>
+            </trans-unit>
+            <trans-unit id="show.research.empty" resname="show.research.empty">
+                <source>No research entries available.</source>
+                <target>Keine Forschungseinträge vorhanden.</target>
+            </trans-unit>
+            <trans-unit id="show.teaching.empty" resname="show.teaching.empty">
+                <source>No teaching entries available.</source>
+                <target>Keine Lehreinträge vorhanden.</target>
+            </trans-unit>
+
+            <!-- Field labels -->
+            <trans-unit id="field.room" resname="field.room">
+                <source>Room</source>
+                <target>Raum</target>
+            </trans-unit>
+            <trans-unit id="field.department" resname="field.department">
+                <source>Department</source>
+                <target>Abteilung</target>
+            </trans-unit>
+            <trans-unit id="field.position" resname="field.position">
+                <source>Position</source>
+                <target>Position</target>
+            </trans-unit>
+            <trans-unit id="field.email" resname="field.email">
+                <source>Email</source>
+                <target>E-Mail</target>
+            </trans-unit>
+            <trans-unit id="field.phone" resname="field.phone">
+                <source>Phone</source>
+                <target>Telefon</target>
+            </trans-unit>
+            <trans-unit id="field.mobile" resname="field.mobile">
+                <source>Mobile</source>
+                <target>Mobil</target>
+            </trans-unit>
+            <trans-unit id="field.fax" resname="field.fax">
+                <source>Fax</source>
+                <target>Fax</target>
+            </trans-unit>
+            <trans-unit id="field.website" resname="field.website">
+                <source>Website</source>
+                <target>Webseite</target>
+            </trans-unit>
+            <trans-unit id="field.teachingArea" resname="field.teachingArea">
+                <source>Teaching area</source>
+                <target>Lehrgebiet</target>
+            </trans-unit>
+            <trans-unit id="field.consultationHours" resname="field.consultationHours">
+                <source>Consultation hours</source>
+                <target>Sprechzeiten</target>
+            </trans-unit>
+
+            <!-- Sub-entities -->
+            <trans-unit id="subentity.moreInfo" resname="subentity.moreInfo">
+                <source>More information</source>
+                <target>Weitere Informationen</target>
             </trans-unit>
 
             <!-- FlexForm -->
