@@ -6,6 +6,10 @@
 Configuration
 =============
 
+.. contents:: On this page
+   :local:
+   :depth: 2
+
 TypoScript Constants
 ====================
 

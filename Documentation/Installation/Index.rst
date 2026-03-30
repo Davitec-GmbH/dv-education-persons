@@ -4,6 +4,10 @@
 Installation
 ============
 
+.. contents:: On this page
+   :local:
+   :depth: 2
+
 Requirements
 ============
 

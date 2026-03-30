@@ -4,6 +4,10 @@
 Introduction
 ============
 
+.. contents:: On this page
+   :local:
+   :depth: 2
+
 What does it do?
 ================
 

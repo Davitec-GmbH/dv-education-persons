@@ -4,6 +4,10 @@
 Usage
 =====
 
+.. contents:: On this page
+   :local:
+   :depth: 2
+
 The extension provides three plugins that are registered as **content elements**
 (CType-based, not ``list_type``).
 
