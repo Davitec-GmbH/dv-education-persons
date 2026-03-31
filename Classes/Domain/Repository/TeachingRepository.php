@@ -13,7 +13,7 @@ use TYPO3\CMS\Extbase\Persistence\Repository;
  */
 class TeachingRepository extends Repository
 {
-    protected array $defaultOrderings = [
+    protected $defaultOrderings = [
         'sorting' => QueryInterface::ORDER_ASCENDING,
     ];
 

@@ -14,7 +14,7 @@ use TYPO3\CMS\Extbase\Persistence\Repository;
  */
 class PersonRepository extends Repository
 {
-    protected array $defaultOrderings = [
+    protected $defaultOrderings = [
         'last_name' => QueryInterface::ORDER_ASCENDING,
         'first_name' => QueryInterface::ORDER_ASCENDING,
     ];
