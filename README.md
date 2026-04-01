@@ -31,3 +31,5 @@ Full documentation is available in `Documentation/` (reStructuredText).
 ## License
 
 GPL-2.0-or-later
+
+Version 1.0.2
