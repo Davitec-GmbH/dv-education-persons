@@ -35,5 +35,8 @@
         "typo3/cms": {
             "extension-key": "dv_education_persons"
         }
+    },
+    "support": {
+        "docs": "https://docs.typo3.org/p/davitec/dv-education-persons/main/en-us/Index.html"
     }
 }
