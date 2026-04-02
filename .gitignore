@@ -2,3 +2,4 @@
 vendor/
 .Build/
 var/
+Documentation-GENERATED-temp/
