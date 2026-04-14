@@ -17,7 +17,7 @@ Education Persons
    en
 
 :Author:
-   Davitec GmbH, +Pluswerk Standort Dresden 
+   Davitec GmbH, +Pluswerk Standort Dresden
 
 :License:
    This document is published under the
